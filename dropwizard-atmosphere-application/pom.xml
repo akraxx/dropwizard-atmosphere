@@ -11,5 +11,46 @@
 
     <artifactId>dropwizard-atmosphere-application</artifactId>
 
+    <properties>
+        <!--plugins-->
+        <exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>fr.mmarie</groupId>
+            <artifactId>dropwizard-atmosphere-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-core</artifactId>
+            <version>${dropwizard.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${exec-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <mainClass>fr.mmarie.DropwizardAtmosphereApplication</mainClass>
+                    <arguments>
+                        <argument>server</argument>
+                        <argument>properties.yml</argument>
+                    </arguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
