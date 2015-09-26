@@ -18,7 +18,6 @@
     <description>Integrate atmosphere on a dropwizard projects.</description>
     <url>https://github.com/akraxx/dropwizard-atmosphere</url>
 
-
     <scm>
         <connection>scm:git:git://github.com/akraxx/dropwizard-atmosphere.git</connection>
         <developerConnection>scm:git:git@github.com:akraxx/dropwizard-atmosphere.git</developerConnection>
@@ -30,6 +29,11 @@
         <system>GitHub</system>
         <url>https://github.com/akraxx/dropwizard-atmosphere/issues</url>
     </issueManagement>
+
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/akraxx/dropwizard-atmosphere</url>
+    </ciManagement>
 
     <licenses>
         <license>
