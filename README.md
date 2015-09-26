@@ -9,8 +9,10 @@ Run the application :
 
 From root folder :
 
-$ mvn clean install
+``` mvn clean install ```
 
 From dropwizard-atmosphere-application folder :
 
-$ mvn exec:java
+``` mvn exec:java ```
+
+Open [the webapp](http://localhost:8092/app/) in some windows and play with the chat!
